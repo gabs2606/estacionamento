@@ -1,5 +1,3 @@
-# Controle de Estacionamento Inteligente
-
 Projeto em PHP 8.2 + SQLite que registra entradas/saídas de veículos, calcula tarifas por hora e gera relatórios. Estrutura modular seguindo SOLID, Clean Code, PSR-4 e PSR-12.
 
 ## Requisitos
@@ -27,13 +25,3 @@ Projeto em PHP 8.2 + SQLite que registra entradas/saídas de veículos, calcula 
 - Tipos: carro (R$5/h), moto (R$3/h), caminhão (R$10/h)
 - Tempo arredondado para cima (hora cheia). Mínimo 1 hora.
 - Relatório consolida por tipo e total geral.
-
-## Como estender
-- Para adicionar novo tipo de veículo: criar `EstrategiaPrecificacao` e registrar na injeção no `registrar_saida.php` (seguir DIP/OCP)
-- Repositórios implementam interfaces (ISP)
-
-## Testes
-- Exemplo com PHPUnit pode ser adicionado em `tests/`
-
-## Observações
-- Projeto minimalista para demonstração de arquitetura; em produção aplique autenticação, validações mais robustas e camadas de DTO/validação adicionais.
